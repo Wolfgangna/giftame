@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Khám phá cách những lời nhắn tích cực có thể gieo niềm vui, tiếp thêm động lực và kết nối mọi người.">
+  <title>Lan tỏa niềm vui 🌸</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>const navEntry=performance.getEntriesByType('navigation')[0];if(navEntry?.type==='back_forward'||(document.referrer&&new URL(document.referrer).origin===location.origin))document.documentElement.classList.add('skip-preloader');</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+</head>
+<body class="about-page joy-page">
+  <div id="preloader" aria-hidden="true" inert>
+    <div class="preloader-content">
+      <div class="preloader-logo">🌸</div>
+      <div class="preloader-text">Góc Tâm Thư</div>
+      <div class="preloader-bar"><div class="preloader-progress"></div></div>
+    </div>
+  </div>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="noise-overlay" aria-hidden="true"></div>
+  <div id="fx" aria-hidden="true"></div>
+
+  <nav class="topbar" aria-label="Điều hướng chính">
+    <a class="brand" href="index.html">
+      <span class="brand-icon">💌</span>
+      <span class="brand-text">Góc Tâm Thư</span>
+    </a>
+    <a class="back-link" href="about.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Về trang giới thiệu
+    </a>
+  </nav>
+
+  <main class="joy-content">
+    <header class="joy-hero">
+      <div class="joy-hero-copy">
+        <div class="badge reveal reveal-scale">
+          <span class="badge-dot"></span>
+          🌸 MỘT CHÚT VUI, LAN TỎA THẬT XA
+        </div>
+        <h1 class="about-title reveal">
+          Niềm vui lớn lên<br>
+          <span class="gradient-text">khi được sẻ chia.</span>
+        </h1>
+        <p class="about-lead reveal stagger-2">
+          Niềm vui không phải lúc nào cũng bắt đầu từ điều lớn lao. Đôi khi, nó chỉ là một lời hỏi thăm đúng lúc, một lời khen chân thành, hay cảm giác biết rằng ở đâu đó có người đang mong mình bình an.
+        </p>
+        <a class="btn-primary magnetic-btn reveal stagger-3" href="#garden">
+          <span>Gieo một hạt niềm vui</span>
+          <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+      <div class="joy-hero-art reveal reveal-scale" aria-hidden="true" data-cursor="image">
+        <canvas class="joy-hero-3d" data-hero-3d="flower" aria-hidden="true"></canvas>
+        <div class="joy-sun"></div>
+        <div class="joy-orbit joy-orbit-one"></div>
+        <div class="joy-orbit joy-orbit-two"></div>
+        <span class="joy-art-flower joy-art-flower-one">
+          <svg class="vector-draw" viewBox="0 0 72 88" fill="none" aria-hidden="true">
+            <path d="M36 43v40m0-15c-8-11-17-9-20-8 4 10 11 14 20 12m0-14c7-10 15-9 19-8-3 9-10 14-19 12" stroke="#547b59" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <g fill="#f3c76d" stroke="#a8793e" stroke-width="1.2">
+              <ellipse class="flower-petal flower-petal--one" cx="36" cy="21" rx="6" ry="11"/>
+              <ellipse class="flower-petal flower-petal--two" cx="36" cy="21" rx="6" ry="11" transform="rotate(60 36 32)"/>
+              <ellipse class="flower-petal flower-petal--three" cx="36" cy="21" rx="6" ry="11" transform="rotate(120 36 32)"/>
+              <ellipse class="flower-petal flower-petal--four" cx="36" cy="21" rx="6" ry="11" transform="rotate(180 36 32)"/>
+              <ellipse class="flower-petal flower-petal--five" cx="36" cy="21" rx="6" ry="11" transform="rotate(240 36 32)"/>
+              <ellipse class="flower-petal flower-petal--six" cx="36" cy="21" rx="6" ry="11" transform="rotate(300 36 32)"/>
+            </g>
+            <circle cx="36" cy="32" r="6" fill="#fff9e8" stroke="#a8793e" stroke-width="1.4"/>
+          </svg>
+        </span>
+        <span class="joy-art-flower joy-art-flower-two">
+          <svg class="vector-draw" viewBox="0 0 72 88" fill="none" aria-hidden="true">
+            <path d="M36 47v36m0-12c-8-8-15-7-20-5 4 8 11 11 20 9m0-13c7-8 14-7 19-5-3 8-10 11-19 9" stroke="#547b59" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="vector-draw__path" pathLength="1" d="M36 49c-5-9-17-17-13-27 2-5 9-5 13 2 4-7 11-7 13-2 4 10-8 18-13 27Z" fill="#d98d79" stroke="#9e5145" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M36 29v12" stroke="#f6dfc4" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="joy-art-flower joy-art-flower-three">
+          <svg class="vector-draw" viewBox="0 0 72 88" fill="none" aria-hidden="true">
+            <path d="M36 45v38m0-14c-7-9-14-8-19-6 4 8 10 11 19 10m0-13c7-8 14-7 19-5-4 8-10 11-19 9" stroke="#547b59" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <g fill="#e9a7a1" stroke="#a85d57" stroke-width="1.2">
+              <ellipse cx="36" cy="24" rx="7" ry="12"/>
+              <ellipse cx="36" cy="24" rx="7" ry="12" transform="rotate(72 36 36)"/>
+              <ellipse cx="36" cy="24" rx="7" ry="12" transform="rotate(144 36 36)"/>
+              <ellipse cx="36" cy="24" rx="7" ry="12" transform="rotate(216 36 36)"/>
+              <ellipse cx="36" cy="24" rx="7" ry="12" transform="rotate(288 36 36)"/>
+            </g>
+            <circle cx="36" cy="36" r="5" fill="#e4b86a"/>
+          </svg>
+        </span>
+        <span class="joy-art-spark joy-art-spark-one">✦</span>
+        <span class="joy-art-spark joy-art-spark-two">✧</span>
+        <span class="joy-art-caption">TỬ TẾ • KẾT NỐI • NỞ HOA</span>
+      </div>
+    </header>
+
+    <section class="joy-cinematic" aria-label="Câu chuyện về một lời tử tế">
+      <div class="joy-cinematic-stage">
+        <div class="joy-cinematic-atmosphere" aria-hidden="true">
+          <span class="joy-cinematic-orbit joy-cinematic-orbit--outer"></span>
+          <span class="joy-cinematic-orbit joy-cinematic-orbit--inner"></span>
+          <span class="joy-cinematic-halo"></span>
+          <span class="joy-cinematic-core">✦</span>
+          <span class="joy-cinematic-petal joy-cinematic-petal--one">🌼</span>
+          <span class="joy-cinematic-petal joy-cinematic-petal--two">🌸</span>
+        </div>
+        <div class="joy-cinematic-copy">
+          <span class="eyebrow">MỘT ĐIỀU NHỎ CÓ THỂ ĐI RẤT XA</span>
+          <h2 class="joy-cinematic-title" aria-label="Một lời tử tế. Khẽ chạm đến một ngày. Rồi nở thành niềm vui.">
+            <span class="joy-cinematic-line">Một lời tử tế.</span>
+            <span class="joy-cinematic-line">Khẽ chạm đến một ngày.</span>
+            <span class="joy-cinematic-line">Rồi nở thành niềm vui.</span>
+          </h2>
+          <div class="joy-cinematic-progress" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="joy-cinematic-hint" aria-hidden="true">CUỘN CHẬM ĐỂ CẢM NHẬN <i>↓</i></span>
+        </div>
+        <span class="joy-cinematic-edge" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <section class="joy-garden-section" id="garden" aria-labelledby="joy-garden-title">
+      <div class="joy-section-heading reveal">
+        <span class="eyebrow">KHU VƯỜN CỦA CHÚNG TA</span>
+        <h2 id="joy-garden-title">Mỗi lời tử tế là một hạt mầm.</h2>
+        <p>Hãy gieo một lời nhắn tích cực. Khu vườn sẽ nở thêm một bông hoa cùng một điều dễ thương dành cho bạn.</p>
+      </div>
+      <div class="joy-garden reveal">
+        <div class="joy-garden-sky" aria-hidden="true">
+          <span class="joy-cloud joy-cloud-one"></span>
+          <span class="joy-cloud joy-cloud-two"></span>
+          <span class="joy-butterfly">🦋</span>
+        </div>
+        <div class="joy-garden-plants" id="joy-garden-plants" aria-hidden="true">
+          <span class="joy-plant joy-plant-one"><i></i><b>🌼</b></span>
+          <span class="joy-plant joy-plant-two"><i></i><b>🌷</b></span>
+          <span class="joy-plant joy-plant-three"><i></i><b>🌸</b></span>
+        </div>
+        <div class="joy-garden-ground" aria-hidden="true"></div>
+        <div class="joy-garden-message" aria-live="polite" aria-atomic="true">
+          <span class="joy-message-icon" aria-hidden="true">🌱</span>
+          <p id="joy-message">Khu vườn đang chờ hạt mầm đầu tiên của bạn.</p>
+        </div>
+        <button class="btn-primary joy-plant-button" id="joy-plant-button" type="button">
+          <span>Gieo một hạt niềm vui</span>
+          <span aria-hidden="true">✿</span>
+        </button>
+        <p class="joy-garden-count"><span id="joy-count">0</span> hạt mầm đã được gieo</p>
+      </div>
+    </section>
+
+    <section class="joy-story">
+      <div class="joy-story-number reveal">01 <span>—</span> 03</div>
+      <article class="joy-story-card joy-story-card--sunrise reveal">
+        <span class="joy-story-icon" aria-hidden="true">☀️</span>
+        <div>
+          <span class="eyebrow">NIỀM VUI BẮT ĐẦU TỪ SỰ QUAN TÂM</span>
+          <h2>Một người được nhớ đến, một ngày bỗng ấm hơn.</h2>
+          <p>Giữa nhịp sống vội vàng, một câu “Hôm nay bạn thế nào?” có thể mở ra một khoảng dừng dịu dàng. Nó không yêu cầu người kia phải vui ngay, cũng không buộc họ phải kể hết mọi chuyện. Chỉ riêng việc biết có người sẵn lòng hỏi và lắng nghe đã có thể giúp một ngày bớt dài hơn.</p>
+        </div>
+      </article>
+
+      <div class="joy-story-number reveal">02 <span>—</span> 03</div>
+      <article class="joy-story-card joy-story-card--bloom reveal">
+        <span class="joy-story-icon" aria-hidden="true">🌷</span>
+        <div>
+          <span class="eyebrow">NIỀM VUI LỚN LÊN KHI ĐƯỢC TRAO ĐI</span>
+          <h2>Điều tốt đẹp không hề vơi bớt khi ta sẻ chia.</h2>
+          <p>Một lời khen thật lòng không làm giá trị của người nói nhỏ đi. Trái lại, nó giúp người nhận nhìn thấy điều đáng quý ở chính mình. Một lời cảm ơn có thể khiến sự cố gắng thầm lặng được gọi tên. Khi niềm vui được chia sẻ bằng sự chân thành, cả người gửi lẫn người nhận đều có thêm một lý do để mỉm cười.</p>
+        </div>
+      </article>
+
+      <div class="joy-story-number reveal">03 <span>—</span> 03</div>
+      <article class="joy-story-card joy-story-card--ripple reveal">
+        <span class="joy-story-icon" aria-hidden="true">💫</span>
+        <div>
+          <span class="eyebrow">MỘT LỜI NHẮN CÓ THỂ ĐI RẤT XA</span>
+          <h2>Sự tử tế thường tìm được cách nảy mầm thêm.</h2>
+          <p>Người từng được động viên có thể sẽ dịu dàng hơn với một người khác. Người từng được lắng nghe có thể sẵn lòng dành thời gian lắng nghe ai đó. Ta không thể biết chính xác một lời nhắn sẽ đi xa đến đâu, nhưng ta có thể chọn điểm bắt đầu: gửi đi một điều tử tế, không cần chờ đợi điều gì đáp lại.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="joy-ripple-path" aria-labelledby="joy-ripple-title">
+      <div class="joy-ripple-heading reveal">
+        <span class="eyebrow">BẮT ĐẦU TỪ ĐIỀU NHỎ NHẤT</span>
+        <h2 id="joy-ripple-title">Một lời tử tế có thể mở ra cả một ngày.</h2>
+        <p>Không cần tìm lời thật hay. Chỉ cần hiện diện, lắng nghe và nói điều bạn thực sự muốn gửi trao.</p>
+      </div>
+      <div class="joy-ripple-steps">
+        <article class="joy-ripple-step reveal">
+          <span class="joy-ripple-step-number">01</span>
+          <span class="joy-ripple-step-icon" aria-hidden="true">👀</span>
+          <h3>Nhìn thấy điều đáng quý</h3>
+          <p>Để ý một cố gắng, một phẩm chất hay một khoảnh khắc nhỏ mà bạn thật lòng trân trọng ở ai đó.</p>
+        </article>
+        <article class="joy-ripple-step reveal">
+          <span class="joy-ripple-step-number">02</span>
+          <span class="joy-ripple-step-icon" aria-hidden="true">💬</span>
+          <h3>Nói bằng sự chân thành</h3>
+          <p>Chia sẻ điều bạn nhận ra bằng lời giản dị, cụ thể; không cần phóng đại hay mong chờ đáp lại.</p>
+        </article>
+        <article class="joy-ripple-step reveal">
+          <span class="joy-ripple-step-number">03</span>
+          <span class="joy-ripple-step-icon" aria-hidden="true">🌱</span>
+          <h3>Để niềm vui tự nảy mầm</h3>
+          <p>Một lời nhắn có thể là điểm tựa cho hôm nay, rồi tiếp tục được trao đi theo cách riêng của người nhận.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="joy-message-gallery" aria-labelledby="joy-message-gallery-title">
+      <div class="joy-message-gallery-heading reveal">
+        <span class="eyebrow">ĐÔI KHI, TA CHỈ CẦN MỘT CÂU ĐÚNG LÚC</span>
+        <h2 id="joy-message-gallery-title">Bạn có thể bắt đầu bằng những lời này.</h2>
+      </div>
+      <div class="joy-message-cards">
+        <article class="joy-message-card joy-message-card--care reveal">
+          <span class="joy-message-card-label">KHI MUỐN HỎI THĂM</span>
+          <span class="joy-message-card-mark" aria-hidden="true">“</span>
+          <blockquote>“Dạo này bạn thế nào? Nếu muốn kể, mình luôn sẵn lòng lắng nghe.”</blockquote>
+          <p>Một lời hỏi thăm không thúc ép, để người kia được chọn điều họ muốn chia sẻ.</p>
+        </article>
+        <article class="joy-message-card joy-message-card--thanks reveal">
+          <span class="joy-message-card-label">KHI MUỐN NÓI CẢM ƠN</span>
+          <span class="joy-message-card-mark" aria-hidden="true">“</span>
+          <blockquote>“Cảm ơn bạn đã ở bên mình hôm ấy. Sự có mặt của bạn thật sự rất ý nghĩa.”</blockquote>
+          <p>Nói rõ điều bạn trân trọng để sự tử tế thầm lặng được nhìn thấy.</p>
+        </article>
+        <article class="joy-message-card joy-message-card--cheer reveal">
+          <span class="joy-message-card-label">KHI MUỐN ĐỘNG VIÊN</span>
+          <span class="joy-message-card-mark" aria-hidden="true">“</span>
+          <blockquote>“Bạn đã cố gắng rất nhiều rồi. Cứ đi từng bước theo nhịp của mình nhé.”</blockquote>
+          <p>Không cần giải quyết mọi chuyện; đôi khi sự đồng hành đã là đủ.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="joy-day-flow" aria-labelledby="joy-day-flow-title">
+      <div class="joy-day-flow-heading reveal">
+        <span class="eyebrow">MỘT NGÀY, BA KHOẢNH KHẮC</span>
+        <h2 id="joy-day-flow-title">Niềm vui có thể ghé qua bất cứ lúc nào.</h2>
+        <p>Không cần chờ dịp đặc biệt. Một chút quan tâm, đúng lúc và vừa đủ, cũng có thể làm ngày thường trở nên ấm áp.</p>
+      </div>
+      <div class="joy-day-track">
+        <article class="joy-day-moment joy-day-moment--morning reveal">
+          <div class="joy-day-marker"><span aria-hidden="true">🌤️</span></div>
+          <span class="joy-day-time">BUỔI SÁNG</span>
+          <h3>Gửi một lời chúc bắt đầu ngày mới</h3>
+          <p>“Chúc bạn hôm nay có đủ bình yên và một điều gì đó khiến bạn mỉm cười.”</p>
+        </article>
+        <article class="joy-day-moment joy-day-moment--noon reveal">
+          <div class="joy-day-marker"><span aria-hidden="true">☀️</span></div>
+          <span class="joy-day-time">GIỮA NGÀY</span>
+          <h3>Nhắc ai đó nhớ nghỉ ngơi</h3>
+          <p>“Bạn đã làm nhiều rồi. Uống chút nước và nghỉ một lát nhé, mọi việc có thể chờ.”</p>
+        </article>
+        <article class="joy-day-moment joy-day-moment--evening reveal">
+          <div class="joy-day-marker"><span aria-hidden="true">🌙</span></div>
+          <span class="joy-day-time">CUỐI NGÀY</span>
+          <h3>Khép lại bằng một lời ghi nhận</h3>
+          <p>“Cảm ơn bạn vì đã đi qua hôm nay theo cách của mình. Thế là đáng tự hào rồi.”</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="joy-small-things reveal">
+      <div class="joy-small-things-heading">
+        <span class="eyebrow">NHỮNG HẠT MẦM RẤT ĐỖI BÌNH THƯỜNG</span>
+        <h2>Niềm vui có thể bắt đầu bằng…</h2>
+      </div>
+      <div class="joy-small-item"><span aria-hidden="true">💌</span><p>Một lời cảm ơn vì ai đó đã ở bên bạn.</p></div>
+      <div class="joy-small-item"><span aria-hidden="true">🌻</span><p>Một lời khen cụ thể và thật lòng.</p></div>
+      <div class="joy-small-item"><span aria-hidden="true">🫶</span><p>Một câu động viên không phán xét.</p></div>
+      <div class="joy-small-item"><span aria-hidden="true">☁️</span><p>Một lời chúc bình an cho hôm nay.</p></div>
+    </section>
+
+    <section class="joy-closing reveal">
+      <span class="joy-closing-flower" aria-hidden="true">🌷</span>
+      <span class="eyebrow">ĐẾN LƯỢT BẠN GIEO MẦM</span>
+      <h2>Hãy gửi đi một niềm vui nhỏ.</h2>
+      <p>Có thể ai đó đang cần nghe đúng điều bạn muốn nói. Viết bằng sự chân thành của bạn, và để lời nhắn ấy tìm đường đến với mọi người.</p>
+      <a class="btn-primary magnetic-btn" href="index.html#send">
+        <span>Gửi lời nhắn yêu thương 💖</span>
+        <div class="btn-shine"></div>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">💌 Góc Tâm Thư</div>
+      <p>Made with ❤️ for khoa hoc moi truong</p>
+      <div class="footer-links">
+        <a href="index.html">Trang chủ</a>
+        <span class="footer-dot">·</span>
+        <a href="about.html">Giới thiệu</a>
+        <span class="footer-dot">·</span>
+        <a class="admin-entry" href="admin.html" aria-label="Mở trang quản trị" title="Quản trị">
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="10" width="16" height="11" rx="2"/>
+            <path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+          </svg>
+          <span class="admin-entry-label">Quản trị</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

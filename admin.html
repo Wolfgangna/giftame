@@ -11,22 +11,54 @@
 </head>
 <body class="admin-page">
   <div class="noise-overlay" aria-hidden="true"></div>
+  <div class="admin-ambient" aria-hidden="true">
+    <span class="admin-ambient-orbit admin-ambient-orbit--one"></span>
+    <span class="admin-ambient-orbit admin-ambient-orbit--two"></span>
+    <span class="admin-ambient-glow"></span>
+  </div>
   <main class="admin-shell">
     <a class="back-link" href="index.html">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
       Về trang chính
     </a>
     <h1>Quản trị tâm thư</h1>
-    <p class="admin-note">Khu vực quản lý tâm thư.</p>
-    <section id="admin-content" class="card">
+    <p class="admin-note">Đăng nhập để ẩn, hiện hoặc xóa tâm thư.</p>
+    <section id="admin-login" class="card admin-login-card">
+      <form id="admin-login-form">
+        <label class="form-group" for="admin-password">
+          <span class="form-label">Mật khẩu quản trị</span>
+          <div class="input-wrapper">
+            <input id="admin-password" type="password" autocomplete="current-password" required>
+            <div class="input-glow"></div>
+          </div>
+        </label>
+        <button id="admin-login-submit" class="btn-primary" type="submit"><span>Đăng nhập</span></button>
+        <p class="admin-security-note">Cấu hình ADMIN_PASSWORD dài ít nhất 16 ký tự trên máy chủ. Hãy sử dụng HTTPS nếu truy cập qua Internet.</p>
+      </form>
+    </section>
+    <section id="admin-content" class="card" hidden>
       <div class="admin-toolbar">
         <h2>Danh sách tâm thư</h2>
-        <button id="refresh" class="btn-ghost" type="button">↻ Làm mới</button>
+        <div class="admin-toolbar-actions">
+          <button id="refresh" class="btn-ghost" type="button">↻ Làm mới</button>
+          <button id="admin-logout" class="btn-ghost" type="button">Đăng xuất</button>
+        </div>
       </div>
       <div id="admin-list"></div>
     </section>
-    <div id="admin-status" class="toast" role="status"></div>
+    <div id="admin-status" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
   </main>
+  <dialog class="confirm-dialog" aria-labelledby="delete-dialog-title" aria-describedby="delete-dialog-description">
+    <form method="dialog">
+      <span class="eyebrow">XÁC NHẬN THAO TÁC</span>
+      <h2 id="delete-dialog-title">Xóa tâm thư này?</h2>
+      <p id="delete-dialog-description">Thao tác này không thể hoàn tác.</p>
+      <div class="confirm-dialog-actions">
+        <button class="btn-ghost" value="cancel">Giữ lại</button>
+        <button class="btn-primary confirm-delete" value="delete">Xóa tâm thư</button>
+      </div>
+    </form>
+  </dialog>
   <script src="admin.js"></script>
 </body>
 </html>

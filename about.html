@@ -8,13 +8,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>const navEntry=performance.getEntriesByType('navigation')[0];if(navEntry?.type==='back_forward'||(document.referrer&&new URL(document.referrer).origin===location.origin))document.documentElement.classList.add('skip-preloader');</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 </head>
 <body class="about-page">
 
 <!-- Preloader -->
-<div id="preloader">
+<div id="preloader" aria-hidden="true" inert>
   <div class="preloader-content">
     <div class="preloader-logo">💌</div>
     <div class="preloader-text">Góc Tâm Thư</div>
@@ -46,6 +47,7 @@
   <div class="about-hero">
     <div class="orb orb-1" aria-hidden="true"></div>
     <div class="orb orb-2" aria-hidden="true"></div>
+    <canvas class="about-hero-3d" data-hero-3d="connection" aria-hidden="true"></canvas>
   </div>
 
   <div class="badge reveal reveal-scale">
@@ -64,25 +66,45 @@
   </p>
 
   <div class="about-grid">
-    <section class="card tilt-card reveal stagger-3">
+    <a class="card tilt-card reveal stagger-3 about-card-link" href="meaning.html">
       <div class="about-card-inner">
-        <span class="about-icon">💌</span>
+        <span class="about-icon">
+          <svg class="vector-draw" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="4.5" y="9" width="31" height="23" rx="5" stroke="currentColor" stroke-width="1.8"/>
+            <path class="vector-draw__path" pathLength="1" d="m6.5 12 13.5 10L33.5 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="m27 5 1.2-2.5L30 5l2.5 1.2L30 7.5l-1.8 2.5L27 7.5l-2.5-1.3L27 5Z" fill="currentColor"/>
+          </svg>
+        </span>
         <h2>Viết thật lòng</h2>
         <p>Không cần những lời hoa mỹ. Một lời nhắn chân thành luôn có cách chạm đến trái tim.</p>
+        <span class="about-card-cta">Đọc về ý nghĩa <span aria-hidden="true">→</span></span>
         <div class="card-glow" aria-hidden="true"></div>
       </div>
-    </section>
-    <section class="card tilt-card reveal stagger-4">
+    </a>
+    <a class="card tilt-card reveal stagger-4 about-card-link" href="joy.html">
       <div class="about-card-inner">
-        <span class="about-icon">🌸</span>
+        <span class="about-icon">
+          <svg class="vector-draw" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <path class="vector-draw__path" pathLength="1" d="M20 20c-4-3-5-8-1-10 3-2 6 1 5 5 4-3 9-2 9 2 0 4-4 6-8 4 2 5 0 9-4 9s-6-4-4-9c-4 2-8 0-8-4s5-5 9-2c-1-4 2-7 5-5 4 2 3 7-1 10Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="20" r="2.2" fill="currentColor"/>
+            <path d="M20 30v7m0-4-4-3m4 1 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </span>
         <h2>Lan tỏa niềm vui</h2>
         <p>Các lời nhắn sẽ lần lượt xuất hiện trên màn hình để mọi người cùng đọc và mỉm cười.</p>
+        <span class="about-card-cta">Khám phá khu vườn niềm vui <span aria-hidden="true">→</span></span>
         <div class="card-glow" aria-hidden="true"></div>
       </div>
-    </section>
+    </a>
     <section class="card tilt-card reveal stagger-5">
       <div class="about-card-inner">
-        <span class="about-icon">🌍</span>
+        <span class="about-icon">
+          <svg class="vector-draw" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="1.8"/>
+            <path class="vector-draw__path" pathLength="1" d="M5.5 20h29M20 5c4 4 6 9 6 15s-2 11-6 15c-4-4-6-9-6-15s2-11 6-15Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 11c3 2 6 3 11 3m11 15c-3-2-6-3-11-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </span>
         <h2>Kết nối mọi người</h2>
         <p>Dù bạn ở đâu, tâm thư sẽ được lan tỏa đến những người xung quanh bạn.</p>
         <div class="card-glow" aria-hidden="true"></div>
@@ -90,7 +112,12 @@
     </section>
     <section class="card tilt-card reveal stagger-6">
       <div class="about-card-inner">
-        <span class="about-icon">💫</span>
+        <span class="about-icon">
+          <svg class="vector-draw" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <path class="vector-draw__path" pathLength="1" d="m20 4 3.5 11.5L35 20l-11.5 3.5L20 35l-3.5-11.5L5 20l11.5-4.5L20 4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="m32 5 1.3 3.7L37 10l-3.7 1.3L32 15l-1.3-3.7L27 10l3.7-1.3L32 5Z" fill="currentColor"/>
+          </svg>
+        </span>
         <h2>Hoàn toàn miễn phí</h2>
         <p>Không cần đăng ký, không cần đăng nhập. Chỉ cần một trái tim ấm áp.</p>
         <div class="card-glow" aria-hidden="true"></div>
@@ -108,6 +135,17 @@
   <div class="footer-content">
     <div class="footer-brand">💌 Góc Tâm Thư</div>
     <p>Made with ❤️ for khoa hoc moi truong</p>
+    <div class="footer-links">
+      <a href="index.html">Trang chủ</a>
+      <span class="footer-dot">·</span>
+      <a class="admin-entry" href="admin.html" aria-label="Mở trang quản trị" title="Quản trị">
+        <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4" y="10" width="16" height="11" rx="2"/>
+          <path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+        </svg>
+        <span class="admin-entry-label">Quản trị</span>
+      </a>
+    </div>
   </div>
 </footer>
 

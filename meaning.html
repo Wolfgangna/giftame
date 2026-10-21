@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Một bài viết về ý nghĩa của những lời nhắn chân thành: sự quan tâm, lòng biết ơn, khả năng lắng nghe và sức mạnh của những điều tử tế giản dị.">
+  <title>Ý nghĩa của lời nhắn chân thành 💌</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>const navEntry=performance.getEntriesByType('navigation')[0];if(navEntry?.type==='back_forward'||(document.referrer&&new URL(document.referrer).origin===location.origin))document.documentElement.classList.add('skip-preloader');</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+</head>
+<body class="about-page meaning-page">
+  <div id="preloader" aria-hidden="true" inert>
+    <div class="preloader-content">
+      <div class="preloader-logo">💌</div>
+      <div class="preloader-text">Góc Tâm Thư</div>
+      <div class="preloader-bar"><div class="preloader-progress"></div></div>
+    </div>
+  </div>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="noise-overlay" aria-hidden="true"></div>
+  <div id="fx" aria-hidden="true"></div>
+
+  <nav class="topbar" aria-label="Điều hướng chính">
+    <a class="brand" href="index.html">
+      <span class="brand-icon">💌</span>
+      <span class="brand-text">Góc Tâm Thư</span>
+    </a>
+    <a class="back-link" href="about.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Về trang giới thiệu
+    </a>
+  </nav>
+
+  <main class="meaning-content">
+    <header class="meaning-hero">
+      <div class="meaning-hero-copy">
+        <div class="badge reveal reveal-scale">
+          <span class="badge-dot"></span>
+          💌 NHỮNG ĐIỀU TỬ TẾ ĐƯỢC GỬI ĐI
+        </div>
+        <h1 class="about-title reveal">
+          Một lời chân thành<br>
+          <span class="gradient-text">có thể ở lại rất lâu.</span>
+        </h1>
+        <p class="about-lead reveal stagger-2">
+          Giữa những ngày bận rộn, đôi khi một câu hỏi thăm, một lời cảm ơn hay vài dòng động viên giản dị lại khiến ai đó cảm thấy lòng mình nhẹ hơn. Bởi điều làm nên giá trị của lời nhắn không phải là sự cầu kỳ, mà là tấm lòng chân thật đứng sau từng câu chữ.
+        </p>
+      </div>
+      <aside class="meaning-letter-art reveal reveal-scale" aria-label="Một lời nhắn từ trái tim" data-cursor="image">
+        <canvas class="meaning-letter-3d" data-hero-3d="heart" aria-hidden="true"></canvas>
+        <svg class="meaning-letter-spark vector-draw" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path class="vector-draw__path" pathLength="1" d="m12 2 2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2L12 2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+        </svg>
+        <span class="meaning-letter-icon">
+          <svg class="vector-draw" viewBox="0 0 72 72" fill="none" aria-hidden="true">
+            <path d="M12 22h48a5 5 0 0 1 5 5v30a5 5 0 0 1-5 5H12a5 5 0 0 1-5-5V27a5 5 0 0 1 5-5Z" fill="var(--c-surface)" stroke="currentColor" stroke-width="1.8"/>
+            <path class="vector-draw__path" pathLength="1" d="m8 27 28 21 28-21M8 58l19-18m37 18L45 40" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M36 12c-4.5-7-15-2-10.5 5.5L36 29l10.5-11.5C51 10 40.5 5 36 12Z" fill="#b14d3c" fill-opacity=".16" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M36 13v12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="meaning-letter-rule" aria-hidden="true"></span>
+        <span class="meaning-letter-caption">VIẾT TỪ TRÁI TIM</span>
+        <span class="meaning-letter-note">Điều tử tế<br>luôn tìm được<br>đường để đến.</span>
+      </aside>
+    </header>
+
+    <section class="meaning-quote reveal stagger-3" aria-label="Thông điệp">
+      <span class="meaning-quote-icon" aria-hidden="true">“</span>
+      <blockquote>
+        Một lời chân thành có thể rất ngắn, nhưng sự ấm áp nó để lại đôi khi ở bên một người thật lâu.
+      </blockquote>
+      <span class="meaning-quote-caption">Bởi ai cũng cần được quan tâm và được lắng nghe.</span>
+    </section>
+
+    <article class="meaning-essay">
+      <section class="meaning-essay-section reveal">
+        <span class="eyebrow">ĐIỀU GIẢN DỊ NHƯNG ĐÁNG QUÝ</span>
+        <h2>Lời nhắn chân thành là một cách nói: “Mình có nghĩ đến bạn.”</h2>
+        <p class="meaning-dropcap">Trong cuộc sống, chúng ta thường gặp nhau giữa rất nhiều việc phải làm. Có những lời muốn nói cứ được giữ lại vì nghĩ rằng ngày mai vẫn còn kịp; có những sự quan tâm ở ngay trong lòng nhưng lại ngại ngùng chưa thể thành lời. Thế rồi, một tin nhắn hỏi thăm, một câu “cảm ơn vì đã ở đây”, hay một lời chúc bình thường bỗng trở nên đặc biệt, bởi nó đến đúng lúc người nhận cần được nhớ rằng mình không bị lãng quên.</p>
+        <p>Một lời nhắn chân thành không cần phải thật dài, cũng chẳng cần dùng những câu từ hoa mỹ. Điều quan trọng là người viết thật sự muốn gửi gắm điều gì và người nhận có thể cảm nhận được sự tử tế ấy. Khi ta viết bằng sự chân thật, những lời giản dị như “Mình trân trọng những gì bạn đã làm” hay “Nếu hôm nay mệt, bạn có thể nghỉ một chút nhé” cũng đủ khiến khoảng cách giữa hai người dường như gần lại.</p>
+        <aside class="meaning-side-note"><span aria-hidden="true">01</span><p>Không cần lời lẽ hoàn hảo. Một tấm lòng thật luôn có cách được cảm nhận.</p></aside>
+      </section>
+
+      <section class="meaning-essay-section meaning-essay-section--reverse reveal">
+        <span class="eyebrow">TRAO ĐI SỰ THẤU HIỂU</span>
+        <h2>Được lắng nghe cũng là một món quà.</h2>
+        <p>Ai cũng có những ngày vui vẻ và những ngày chẳng biết phải kể cùng ai. Trong một ngày khó khăn, điều một người cần đôi khi không phải là lời khuyên thật lớn lao hay một cách giải quyết ngay lập tức. Họ chỉ cần được lắng nghe mà không bị phán xét, được hỏi han mà không phải gượng cười, và biết rằng cảm xúc của mình có ý nghĩa với một ai đó.</p>
+        <p>Vì thế, lời nhắn ấm áp nhất không nhất thiết là lời hứa rằng mọi chuyện sẽ lập tức tốt đẹp. Đó có thể chỉ là một lời công nhận nhẹ nhàng: “Mình biết bạn đã cố gắng nhiều”, hoặc “Bạn không cần phải ổn ngay bây giờ”. Khi không áp đặt cảm xúc hay thúc ép người khác phải vui lên, ta đang dành cho họ một khoảng không an toàn để được là chính mình. Sự dịu dàng ấy giúp người nhận bớt cảm thấy đơn độc và có thêm can đảm để đi tiếp theo nhịp riêng của họ.</p>
+        <aside class="meaning-side-note"><span aria-hidden="true">02</span><p>Lắng nghe không phải để sửa chữa mọi điều, mà để người kia biết họ không phải một mình.</p></aside>
+      </section>
+
+      <section class="meaning-essay-section reveal">
+        <span class="eyebrow">NUÔI DƯỠNG LÒNG BIẾT ƠN</span>
+        <h2>Nói lời cảm ơn để những điều tốt đẹp không bị xem là hiển nhiên.</h2>
+        <p>Chúng ta thường dễ nhận ra những điều lớn lao, nhưng đôi khi lại quên mất những quan tâm nhỏ vẫn âm thầm hiện diện mỗi ngày: một người kiên nhẫn chỉ dẫn, một người dành thời gian lắng nghe, hay một người luôn hỏi xem ta đã về nhà an toàn chưa. Một lời cảm ơn chân thành giúp ta dừng lại để nhìn thấy những điều ấy. Nó cũng nói với người đã trao đi sự tử tế rằng nỗ lực của họ được ghi nhận.</p>
+        <p>Lòng biết ơn không khiến cuộc sống bỗng trở nên hoàn hảo; nhưng khi được bày tỏ, nó làm cho những mối quan hệ trở nên ấm áp và thật lòng hơn. Đôi khi chỉ cần nói rõ mình biết ơn điều gì, thay vì một lời cảm ơn chung chung, người nhận đã có thể cảm thấy niềm vui rất riêng: điều họ làm đã thực sự chạm đến ai đó.</p>
+        <aside class="meaning-side-note meaning-side-note--warm"><span aria-hidden="true">03</span><p>Hãy nói lời cảm ơn cụ thể. Người nghe sẽ biết điều gì ở họ đã làm bạn ấm lòng.</p></aside>
+      </section>
+
+      <section class="meaning-essay-section meaning-essay-section--reverse reveal">
+        <span class="eyebrow">SỨC LAN TỎA CỦA SỰ TỬ TẾ</span>
+        <h2>Một điều tốt đẹp có thể tiếp tục đi xa.</h2>
+        <p>Khi nhận được một lời nhắn tử tế, ta không chỉ vui trong khoảnh khắc ấy. Ta có thể nhớ lại nó vào một ngày khác, khi cần thêm chút niềm tin; ta cũng có thể mang sự dịu dàng ấy trao tiếp cho một người xung quanh. Theo cách đó, một lời nhắn nhỏ không dừng lại ở người gửi và người nhận, mà trở thành khởi đầu cho nhiều hành động quan tâm khác.</p>
+        <p>Góc Tâm Thư được tạo nên từ mong muốn giản dị ấy: để mọi người có thể gửi đi những điều tốt đẹp mà đôi khi ngoài đời chúng ta còn ngại nói thành lời. Mỗi tâm thư là một dấu chấm nhỏ của sự kết nối. Có người viết để cảm ơn, có người muốn động viên, có người chỉ muốn gửi một lời chúc lành. Dù khác nhau về câu chữ, tất cả đều gặp nhau ở mong muốn làm cho ai đó cảm thấy vui hơn, được trân trọng hơn, hay có thêm một chút hy vọng.</p>
+        <aside class="meaning-side-note meaning-side-note--pink"><span aria-hidden="true">04</span><p>Một lời tử tế được trao đi có thể trở thành lý do để ai đó tiếp tục trao đi điều tốt đẹp.</p></aside>
+      </section>
+
+      <section class="meaning-examples reveal" aria-label="Những lời chân thành có thể bắt đầu từ">
+        <div class="meaning-examples-heading">
+          <span class="eyebrow">ĐÔI KHI, CHỈ CẦN BẮT ĐẦU</span>
+          <h2>Ba điều nhỏ ta có thể nói hôm nay.</h2>
+        </div>
+        <article class="meaning-example-card meaning-example-card--thanks">
+          <span aria-hidden="true">✦</span>
+          <p>“Cảm ơn vì bạn đã luôn lắng nghe mình.”</p>
+          <small>Một lời biết ơn</small>
+        </article>
+        <article class="meaning-example-card meaning-example-card--care">
+          <span aria-hidden="true">♡</span>
+          <p>“Mình mong hôm nay bạn sẽ dịu dàng với chính mình.”</p>
+          <small>Một lời quan tâm</small>
+        </article>
+        <article class="meaning-example-card meaning-example-card--hope">
+          <span aria-hidden="true">✧</span>
+          <p>“Bạn đã đi được một chặng đường đáng tự hào.”</p>
+          <small>Một lời động viên</small>
+        </article>
+      </section>
+
+      <section class="meaning-essay-section meaning-essay-ending reveal">
+        <span class="eyebrow">BẮT ĐẦU TỪ ĐIỀU BẠN THẬT SỰ MUỐN NÓI</span>
+        <h2>Hãy viết bằng giọng nói của chính mình.</h2>
+        <p>Để viết một lời nhắn có ý nghĩa, bạn không cần tìm kiếm một câu nói hoàn hảo. Hãy nghĩ đến người mình muốn gửi lời, nhớ lại điều bạn thật sự trân trọng ở họ, rồi viết ra bằng cách tự nhiên nhất. Có thể là một lời cảm ơn vì họ đã giúp đỡ, một lời chúc trước một chặng đường mới, hay một câu động viên không đòi hỏi họ phải trả lời. Chân thành cũng có nghĩa là biết tôn trọng ranh giới, hoàn cảnh và cảm xúc của người nhận.</p>
+        <p>Nếu chưa biết bắt đầu từ đâu, hãy bắt đầu bằng một điều nhỏ: “Mình muốn bạn biết rằng…”. Sau đó, cứ để những lời thật lòng của mình được tiếp nối. Bởi biết đâu, ngay lúc này có một người đang cần đọc chính điều bạn định gửi đi. Và dù lời nhắn ấy chỉ ở lại trong vài phút hay được nhớ mãi về sau, việc bạn chọn trao đi sự tử tế đã khiến thế giới quanh mình ấm áp hơn một chút.</p>
+        <aside class="meaning-ending-mark" aria-hidden="true">💌</aside>
+      </section>
+    </article>
+
+    <div class="meaning-actions reveal">
+      <a class="btn-primary magnetic-btn" href="index.html#send">
+        <span>Gửi một lời tử tế 💖</span>
+        <div class="btn-shine"></div>
+      </a>
+      <a class="meaning-back-link" href="about.html">Khám phá thêm về Góc Tâm Thư</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">💌 Góc Tâm Thư</div>
+      <p>Made with ❤️ for khoa hoc moi truong</p>
+      <div class="footer-links">
+        <a href="index.html">Trang chủ</a>
+        <span class="footer-dot">·</span>
+        <a href="about.html">Giới thiệu</a>
+        <span class="footer-dot">·</span>
+        <a class="admin-entry" href="admin.html" aria-label="Mở trang quản trị" title="Quản trị">
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="10" width="16" height="11" rx="2"/>
+            <path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+          </svg>
+          <span class="admin-entry-label">Quản trị</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

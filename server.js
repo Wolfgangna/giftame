@@ -2,6 +2,7 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 const os = require("os");
+const crypto = require("crypto");
 
 const port = Number(process.env.PORT || 3000);
 const root = __dirname;
@@ -42,6 +43,25 @@ function rateLimit(req) {
   if (recent.length >= 20) return false;
   recent.push(now); requests.set(key, recent); return true;
 }
+function authorizeAdmin(req, res) {
+  if (!process.env.ADMIN_PASSWORD || Buffer.byteLength(process.env.ADMIN_PASSWORD, "utf8") < 16) {
+    send(res, 503, {error:"Mật khẩu quản trị chưa được cấu hình hoặc ngắn hơn 16 ký tự."});
+    return false;
+  }
+  if (!rateLimit(req)) {
+    send(res, 429, {error:"Quá nhiều yêu cầu. Vui lòng thử lại sau."});
+    return false;
+  }
+  const authorization = req.headers.authorization || "";
+  const token = authorization.startsWith("Bearer ") ? authorization.slice(7) : "";
+  const expected = Buffer.from(process.env.ADMIN_PASSWORD);
+  const provided = Buffer.from(token);
+  if (expected.length !== provided.length || !crypto.timingSafeEqual(expected, provided)) {
+    send(res, 401, {error:"Mật khẩu quản trị không đúng."});
+    return false;
+  }
+  return true;
+}
 function safeFile(requestPath) {
   const file = path.resolve(root, "." + (requestPath === "/" ? "/index.html" : requestPath));
   const relative = path.relative(root, file);
@@ -56,6 +76,7 @@ const server = http.createServer(async (req, res) => {
       return send(res, 200, readLetters().filter(letter => (letter.status || "approved") === "approved"));
     }
     if (requestPath === "/api/admin/letters" && req.method === "GET") {
+      if (!authorizeAdmin(req, res)) return;
       return send(res, 200, readLetters());
     }
     if (requestPath === "/api/letters" && req.method === "POST") {
@@ -74,6 +95,7 @@ const server = http.createServer(async (req, res) => {
       return send(res, 201, item);
     }
     if (requestPath.startsWith("/api/letters/")) {
+      if ((req.method === "DELETE" || req.method === "PATCH") && !authorizeAdmin(req, res)) return;
       const id = Number(decodeURIComponent(requestPath.slice("/api/letters/".length)));
       if (!Number.isInteger(id)) return send(res, 400, {error:"Mã tâm thư không hợp lệ."});
       if (req.method === "DELETE") {
@@ -104,6 +126,9 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(port, () => {
   console.log(`Góc Tâm Thư đang chạy tại http://localhost:${port}`);
+  if (!process.env.ADMIN_PASSWORD || Buffer.byteLength(process.env.ADMIN_PASSWORD, "utf8") < 16) {
+    console.warn("Quản trị đang bị khóa: hãy cấu hình ADMIN_PASSWORD (tối thiểu 16 ký tự) trước khi sử dụng.");
+  }
   for (const interfaces of Object.values(os.networkInterfaces())) {
     for (const network of interfaces || []) if (network.family === "IPv4" && !network.internal) console.log(`Điện thoại: http://${network.address}:${port}`);
   }
