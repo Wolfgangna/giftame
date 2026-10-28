@@ -3,6 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Góc Tâm Thư là nơi mọi người có thể gửi những lời nhắn yêu thương, chúc mừng và những điều muốn nói thật lòng.">
+<meta name="theme-color" content="#f7efff">
+<meta property="og:title" content="Góc Tâm Thư 💌">
+<meta property="og:description" content="Một nơi để gửi gắm những lời yêu thương chân thành.">
+<meta property="og:image" content="assets/letter-writing.jpg">
+<meta property="og:type" content="website">
 <title>Góc Tâm Thư 💌</title>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -19,15 +25,112 @@
 </nav>
 
 <header class="hero">
-  <div class="badge">💌 GÓC TÂM THƯ</div>
-  <h1>Điều bạn muốn <em>gửi gắm?</em></h1>
-  <p>Viết một lời nhắn nhỏ. Để yêu thương được lan tỏa thật xa.</p>
-  <div class="hero-actions">
-    <a href="#send">Gửi tâm thư</a>
-    <button id="presentation" type="button">📺 Màn hình trình chiếu</button>
+  <div class="hero-copy">
+    <div class="badge">💌 GÓC TÂM THƯ</div>
+    <h1>Điều bạn muốn<br><em>gửi gắm?</em></h1>
+    <p>Viết một lời nhắn thật lòng. Để những điều bạn muốn nói được gửi đi một cách dịu dàng và ý nghĩa.</p>
+    <div class="hero-actions">
+      <a href="#send">Gửi tâm thư</a>
+      <button id="share-link" type="button">🔗 Chia sẻ</button>
+      <button id="presentation" type="button">📺 Màn hình trình chiếu</button>
+    </div>
+    <div class="hero-stats"><span><b id="letter-count">0</b> lời nhắn</span><i></i><span>✨ Lan tỏa yêu thương</span></div>
   </div>
-  <div class="hero-stats"><span><b id="letter-count">0</b> lời nhắn</span><i></i><span>✨ Lan tỏa yêu thương</span></div>
+  <figure class="hero-visual">
+    <img src="assets/letter-writing.jpg" alt="Ngòi bút đang viết một lá thư" width="1400" height="933" fetchpriority="high">
+    <figcaption><span>GÓC NHỎ ĐỂ NÓI ĐIỀU CHÂN THÀNH</span><strong>Một lời viết ra,<br>một niềm thương được gửi đi.</strong></figcaption>
+  </figure>
 </header>
+
+<section class="feature-strip" aria-label="Điểm nổi bật của website">
+  <article class="feature-item">
+    <span class="feature-icon">💌</span>
+    <div>
+      <strong>Viết thật lòng</strong>
+      <small>Những lời nhắn được giữ trong góc riêng dịu dàng.</small>
+    </div>
+  </article>
+  <article class="feature-item">
+    <span class="feature-icon">✨</span>
+    <div>
+      <strong>Trình chiếu đẹp</strong>
+      <small>Các tâm thư được lật dần như một câu chuyện mềm mại.</small>
+    </div>
+  </article>
+  <article class="feature-item">
+    <span class="feature-icon">🌸</span>
+    <div>
+      <strong>Không gian ấm</strong>
+      <small>Chạm tới cảm xúc bằng màu sắc, khoảng trống và sự tinh tế.</small>
+    </div>
+  </article>
+</section>
+
+<section class="quote-showcase" aria-label="Nội dung cảm xúc">
+  <div class="quote-copy">
+    <span class="eyebrow">VỀ NÓI NHỮNG ĐIỀU THẬT LÒNG</span>
+    <h3>Mỗi lời nhắn là một khoảng sáng trong ngày.</h3>
+    <p>Góc Tâm Thư không chỉ là nơi để viết. Đó là nơi những điều muốn nói được giữ ở chỗ dịu dàng nhất, để ai đó có thể đọc và cảm thấy được yêu thương.</p>
+  </div>
+  <div class="stat-grid" aria-label="Các giá trị của góc tâm thư">
+    <div class="mini-stat">
+      <strong>01</strong>
+      <span>Viết</span>
+    </div>
+    <div class="mini-stat">
+      <strong>02</strong>
+      <span>Gửi</span>
+    </div>
+    <div class="mini-stat">
+      <strong>03</strong>
+      <span>Đọc</span>
+    </div>
+  </div>
+</section>
+
+<section class="story-card" aria-label="Câu chuyện về góc tâm thư">
+  <div class="story-head">
+    <span class="eyebrow">ĐIỀU KHIẾN NÓ THỰC SỰ ĐẶC BIỆT</span>
+    <h3>Không chỉ là nơi viết, mà là nơi để được nghe.</h3>
+  </div>
+  <div class="story-grid">
+    <article class="story-item">
+      <span>💬</span>
+      <h4>Những lời thật lòng</h4>
+      <p>Mỗi câu được viết ra với sự cẩn trọng, để giữ lại cảm xúc mà đôi khi không ai biết nói ra.</p>
+    </article>
+    <article class="story-item">
+      <span>🌷</span>
+      <h4>Không gian dịu dàng</h4>
+      <p>Những tông màu ấm, có khoảng trống, giúp người đọc cảm thấy bình yên khi mở từng bức thư.</p>
+    </article>
+    <article class="story-item">
+      <span>💖</span>
+      <h4>Yêu thương được lan tỏa</h4>
+      <p>Một lời nhắn nhỏ có thể khiến ai đó thấy mình không đơn độc. Đó là điều website này muốn mang lại.</p>
+    </article>
+  </div>
+</section>
+
+<section class="cta-banner" aria-label="Kêu gọi gửi tâm thư">
+  <div>
+    <span class="eyebrow">CÙNG CHIA SẺ NHỮNG LỜI THẬT LÒNG</span>
+    <h3>Bạn có điều muốn nói, nhưng chưa biết nơi nào để gửi?</h3>
+  </div>
+  <a href="#send">Gửi tâm thư ngay</a>
+</section>
+
+<section class="brand-footer-panel" aria-label="Kết thúc trang">
+  <div class="brand-footer-copy">
+    <span class="eyebrow">GÓC TÂM THƯ</span>
+    <h3>Không gian nhỏ để từng lời nói được cất lên đầy yêu thương.</h3>
+  </div>
+  <div class="mini-badges" aria-label="Các tiêu chí của website">
+    <span>💌 Tự do</span>
+    <span>✨ Dịu nhàn</span>
+    <span>❤️ Chân thành</span>
+  </div>
+</section>
 
 <div class="music-player" aria-hidden="true">
   <audio id="background-music" loop preload="auto">
@@ -56,6 +159,8 @@
       <textarea id="message" required placeholder="Viết điều bạn muốn gửi gắm..."></textarea>
       <span class="counter"><b id="count">0</b>/1000 từ</span>
     </label>
+    <p class="privacy-note">Tâm thư sẽ được lưu trên máy chủ và hiển thị cho người truy cập website. Vui lòng không ghi thông tin cá nhân nhạy cảm.</p>
+    <label class="consent-row"><input id="privacy-consent" type="checkbox" required> Tôi đồng ý lưu và hiển thị lời nhắn này trên website.</label>
     <label class="check-row"><input id="anonymous" type="checkbox"> Gửi ẩn danh</label>
     <div class="form-actions">
       <button class="secondary" id="clear-form" type="button">Xóa nội dung</button>
@@ -68,6 +173,26 @@
   <div class="screen-head">
     <b id="currentType">💌 Tâm thư</b>
     <span><i></i> <span id="play-status">Đang chờ</span></span>
+  </div>
+  <div class="filter-bar" aria-label="Lọc tâm thư theo loại">
+    <button class="filter-chip active" data-filter="Tất cả" type="button">Tất cả</button>
+    <button class="filter-chip" data-filter="💌 Tâm thư" type="button">💌 Tâm thư</button>
+    <button class="filter-chip" data-filter="🎉 Chúc mừng" type="button">🎉 Chúc mừng</button>
+    <button class="filter-chip" data-filter="❤️ Lời yêu thương" type="button">❤️ Yêu thương</button>
+    <button class="filter-chip" data-filter="🌟 Lời chúc" type="button">🌟 Lời chúc</button>
+  </div>
+  <div class="toolbar">
+    <label class="search-box">
+      <span>Tìm kiếm</span>
+      <input id="letter-search" type="search" placeholder="Tìm theo tên, loại hoặc nội dung...">
+    </label>
+    <label class="sort-box">
+      <span>Sắp xếp</span>
+      <select id="sort-order">
+        <option value="newest">Mới nhất</option>
+        <option value="oldest">Cũ nhất</option>
+      </select>
+    </label>
   </div>
   <div id="screen" class="screen">
     <div class="empty">💗<strong>Đang chờ những lời nhắn...</strong><small>Hãy gửi tâm thư đầu tiên.</small></div>
@@ -92,3 +217,4 @@
 <script src="main.js"></script>
 </body>
 </html>
+

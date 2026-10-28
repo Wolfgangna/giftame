@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1792000000001,
+    "name": "Hương",
+    "type": "💌 Tâm thư",
+    "message": "Mỗi ngày đều có một điều đẹp để giữ trong lòng. Cảm ơn vì đã ở đây và làm cho không gian này dịu đi.",
+    "createdAt": "2026-10-14T10:00:00.001Z"
+  },
+  {
+    "id": 1792000000002,
+    "name": "Minh",
+    "type": "❤️ Lời yêu thương",
+    "message": "Mong rằng bạn luôn được yêu thương, được dịu dàng, và được sống đúng với những điều mình muốn.",
+    "createdAt": "2026-10-14T10:00:00.002Z"
+  },
+  {
+    "id": 1792000000003,
+    "name": "Linh",
+    "type": "🌟 Lời chúc",
+    "message": "Chúc bạn bình an, hạnh phúc và đủ dũng cảm để đi tiếp trên con đường của mình.",
+    "createdAt": "2026-10-14T10:00:00.003Z"
+  }
+]
